@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9618 November 2025 Paper 4/2 Portal</title>
+    <!-- Tailwind CSS for modern utility styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F527C2;
+            color: #333;
+            max-width: 1450px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .container {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* Three Dropdown Selectors Bar */
+        .selector-section {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .dropdown-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex: 1;
+            min-width: 320px;
+        }
+        .dropdown-group label {
+            font-weight: bold;
+            font-size: 13px;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        select {
+            padding: 10px 12px;
+            font-size: 14px;
+            font-weight: bold;
+            width: 100%;
+            background-color: #A6F527;
+            border: 1px solid #7cb316;
+            border-radius: 5px;
+            cursor: pointer;
+            box-sizing: border-box;
+            color: #1a2e05;
+        }
+
+        /* Split Screen Grid Layout */
+        .exam-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: stretch;
+            margin-top: 15px;
+        }
+        .exam-panel {
+            flex: 1;
+            min-width: 480px;
+            height: 720px;
+            background: #f8f9f9;
+            border: 2px solid #bdc3c7;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+        .exam-panel h3 {
+            color: #ffffff;
+            margin-top: 0;
+            margin-bottom: 15px;
+            padding: 10px 12px;
+            border-radius: 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+        }
+        .panel-left-header {
+            background-color: #A6F527;
+            color: #1a2e05 !important;
+        }
+        .panel-right-header {
+            background-color: #27C2F5;
+            color: #0f2c3d !important;
+        }
+
+        .image-gallery-box {
+            background: #ffffff;
+            padding: 15px;
+            border: 1px solid #dcdde1;
+            border-radius: 6px;
+            overflow-y: auto;
+            flex: 1;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image-gallery-box img {
+            width: 100% !important;
+            height: auto !important;
+            max-width: 100% !important;
+            max-height: 100% !important;
+            display: block !important;
+            margin: 0 auto !important;
+            border-radius: 5px;
+            border: 1px solid #bdc3c7;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            object-fit: contain;
+        }
+
+        pre {
+            background: #2d3748;
+            color: #f7fafc;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 13px;
+            white-space: pre-wrap;
+            line-height: 1.4;
+            overflow-y: auto;
+            flex: 1;
+            margin: 0;
+        }
+
+        .reminder-box {
+            background: #2c3e50;
+            color: #f1c40f;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 25px;
+            text-align: left;
+            font-size: 14px;
+        }
+        .reminder-box h4 {
+            margin: 0 0 8px 0;
+            color: #e74c3c;
+            font-size: 16px;
+        }
+        .reminder-box ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .reminder-box li {
+            margin-bottom: 5px;
+            color: #ecf0f1;
+        }
+
+        .prayer-footer {
+            background-color: #1e293b;
+            color: #A6F527;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 25px;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 1.6;
+            text-transform: uppercase;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>9618 November 2025 Paper 4/2 Portal</h1>
+        <p>A Level Computer Science (Complete Paper 4 Suite) Python Language</p>
+        <p>-----------------------------------------------------------------</p>
+        
+        <!-- Dropdown Selectors -->
+        <div class="selector-section">
+            <div class="dropdown-group">
+                <label>📌 Question 1 (Object-Oriented Programming)</label>
+                <select id="q1Dropdown" onchange="loadSelectedPage('q1')">
+                    <option value="" disabled selected>-- Select Question 1 Page --</option>
+                    <option value="q1-p1">Page 1: Bird Class & Constructor 1(a)(i)</option>
+                    <option value="q1-p2">Page 2: Get Methods 1(a)(ii)-(iii)</option>
+                    <option value="q1-p3">Page 3: Move Method & Instances 1(a)(iv)-(b)</option>
+                    <option value="q1-p4">Page 4: Main Program & Testing 1(c)</option>
+                </select>
+            </div>
+
+            <div class="dropdown-group">
+                <label>📌 Question 2 (Arrays, Sorting & Binary Search)</label>
+                <select id="q2Dropdown" onchange="loadSelectedPage('q2')">
+                    <option value="" disabled selected>-- Select Question 2 Page --</option>
+                    <option value="q2-p1">Page 1: Random Array, Print & Bubble Sort 2(a)-(c)</option>
+                    <option value="q2-p2">Page 2: Main Sorting & RecursiveBinarySearch 2(d)-(e)</option>
+                    <option value="q2-p3">Page 3: Binary Search Main Program & Testing 2(f)</option>
+                </select>
+            </div>
+
+            <div class="dropdown-group">
+                <label>📌 Question 3 (Binary Trees & File Handling)</label>
+                <select id="q3Dropdown" onchange="loadSelectedPage('q3')">
+                    <option value="" disabled selected>-- Select Question 3 Page --</option>
+                    <option value="q3-p1">Page 1: Tree Setup & AddNode() 3(a)-(b)</option>
+                    <option value="q3-p2">Page 2: File Reading & WriteAllToFile() 3(c)-(e)</option>
+                    <option value="q3-p3">Page 3: TreeData.txt Data File Format</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Split Screen Display -->
+        <div class="exam-grid">
+            <div class="exam-panel">
+                <h3 id="panelTitle" class="panel-left-header">📄 Exam Paper Page</h3>
+                <div id="imageGalleryOutput" class="image-gallery-box"></div>
+            </div>
+
+            <div class="exam-panel">
+                <h3 class="panel-right-header">💻 Python Model Solution</h3>
+                <pre id="pythonCodeOutput"></pre>
+            </div>
+        </div>
+
+        <!-- Reminders -->
+        <div class="reminder-box" id="reminderBox">
+            <h4>💡 Student Exam Reminders:</h4>
+            <ul>
+                <li><b>OOP Encapsulation:</b> Use double underscores (e.g., `__DistancePerHour`) for private attributes[cite: 13, 14].</li>
+                <li><b>Binary Search:</b> Ensure base cases for recursion check if lower bound exceeds upper bound returning `-1`[cite: 18].</li>
+                <li><b>Binary Tree Pointers:</b> Always check if `FreeNode` exceeds array bounds before inserting nodes[cite: 20].</li>
+            </ul>
+        </div>
+
+        <!-- Prayer Footer -->
+        <div class="prayer-footer">
+            SEMOGA ALLAH TA'ALA MEMUDAHKAN URUSAN PELAJAR-PELAJAR DALAM PEPERIKSAAN MEREKA, MENGUATKAN HAFALAN MEREKA DAN MENJAWAP SEMUA SOALAN DENGAN MUDAH, BETUL & LENGKAP, DIDALAM MASA YANG DITENTUKAN UNTUK MENDAPAT KEPUTUSAN YANG CEMERLANG
+        </div>
+    </div>
+
+    <script>
+        const GITHUB_USER = "tutormszeeqah";
+        const GITHUB_REPO = "cs9618_Nov25_P42";
+        const GITHUB_BRANCH = "main";
+        
+        const RAW_GITHUB_BASE = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${GITHUB_BRANCH}/`;
+
+        const examData = {
+            // --- QUESTION 1 ---
+            "q1-p1": {
+                title: "📄 Question 1 - Page 1: Bird Class & Constructor 1(a)(i)",
+                imageFile: "N25_q1_pg1.PNG",
+                code: `# =========================================================
+# 9618 November 2025 Paper 42 - Question 1(a)(i)
+# =========================================================
+
+class Bird:
+    # __DistancePerHour : float
+    # __Species         : str
+    # __XPosition       : float
+    # __YPosition       : float
+
+    def __init__(self, p_species: str, p_speed: float):
+        self.__DistancePerHour = p_speed
+        self.__Species = p_species
+        self.__XPosition = 500.0
+        self.__YPosition = 500.0`
+            },
+            "q1-p2": {
+                title: "📄 Question 1 - Page 2: Get Methods 1(a)(ii)-(iii)",
+                imageFile: "N25_q1_pg2.PNG",
+                code: `# =========================================================
+# 9618 November 2025 Paper 42 - Question 1(a)(ii) & (iii)
+# =========================================================
+
+    def GetSpecies(self) -> str:
+        return self.__Species
+
+    def GetPosition(self) -> str:
+        return f"X = {self.__XPosition} Y = {self.__YPosition}"`
+            },
+            "q1-p3": {
+                title: "📄 Question 1 - Page 3: Move Method & Instances 1(a)(iv)-(b)",
+                imageFile: "N25_q1_pg3.PNG",
+                code: `# =========================================================
+# 9618 November 2025 Paper 42 - Question 1(a)(iv) & (b)
+# =========================================================
+
+    def Move(self, p_direction: str, p_minutes: int):
+        distance = (self.__DistancePerHour / 60.0) * p_minutes
+        p_direction = p_direction.upper()
+        
+        if p_direction == 'N':
+            self.__YPosition += distance
+        elif p_direction == 'S':
+            self.__YPosition -= distance
+        elif p_direction == 'E':
+            self.__XPosition += distance
+        elif p_direction == 'W':
+            self.__XPosition -= distance
+
+# 1(b) Create two instances of Bird
+Bird1 = Bird("Cockatiel", 71.0)
+Bird2 = Bird("Macaw", 56.0)`
+            },
+            "q1-p4": {
+                title: "📄 Question 1 - Page 4: Main Program & Testing 1(c)",
+                imageFile: "N25_q1_pg4.PNG",
+                code: `# =========================================================
+# 9618 November 2025 Paper 42 - Question 1(c) Main Program
+# =========================================================
+
+if __name__ == "__main__":
+    birds = [Bird1, Bird2]
+    
+    for b in birds:
+        print(f"Species: {b.GetSpecies()}, Position: {b.GetPosition()}")
+        
+    # User selection loop
+    valid_bird = False
+    chosen_bird = None
+    while not valid_bird:
+        b_input = input("Select bird (1 for Cockatiel, 2 for Macaw): ")
+        if b_input == '1':
+            chosen_bird = Bird1
+            valid_bird = True
+        elif b_input == '2':
+            chosen_bird = Bird2
+            valid_bird = True
+
+    valid_dir = False
+    direction = ""
+    while not valid_dir:
+        direction = input("Enter direction (N, S, E, W): ").upper()
+        if direction in ['N', 'S', 'E', 'W']:
+            valid_dir = True
+
+    valid_time = False
+    minutes = 0
+    while not valid_time:
+        try:
+            minutes = int(input("Enter minutes flying (0-500): "))
+            if 0 <= minutes <= 500:
+                valid_time = True
+        except ValueError:
+            pass
+
+    chosen_bird.Move(direction, minutes)
+    print("Updated Position:", chosen_bird.GetPosition())`
+            },
+
+            // --- QUESTION 2 ---
+            "q2-p1": {
+                title: "📄 Question 2 - Page 1: Random Array, Print & Bubble Sort 2(a)-(c)",
+                imageFile: "N25_q2_pg1.PNG",
+                code: `# =========================================================
+# 9618 November 2025 Paper 42 - Question 2(a), (b), (c)
+# =========================================================
+import random
+
+# 2(a) Store 20 unique random integers between 0 and 100
+ArrayData = []
+while len(ArrayData) < 20:
+    num = random.randint(0, 100)
+    if num not in ArrayData:
+        ArrayData.append(num)
+
+# 2(b) Procedure PrintArray()
+def PrintArray(arr):
+    print(" ".join(map(str, arr)))
+
+# 2(c) Function BubbleSort()
+def BubbleSort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr`
+            },
+            "q2-p2": {
+                title: "📄 Question 2 - Page 2: Main Sorting & RecursiveBinarySearch 2(d)-(e)",
+                imageFile: "N25_q2_pg2.PNG",
+                code: `# =========================================================
+# 9618 November 2025 Paper 42 - Question 2(d) & (e)
+# =========================================================
+
+# 2(d) Main program testing sort
+PrintArray(ArrayData)
+ArrayData = BubbleSort(ArrayData)
+print("Sorted")
+PrintArray(ArrayData)
+
+# 2(e) RecursiveBinarySearch() Function
+def RecursiveBinarySearch(arr, lower, upper, target):
+    if lower > upper:
+        return -1
+    
+    mid = (lower + upper) // 2
+    if arr[mid] == target:
+        return mid
+    elif arr[mid] > target:
+        return RecursiveBinarySearch(arr, lower, mid - 1, target)
+    else:
+        return RecursiveBinarySearch(arr, mid + 1, upper, target)`
+            },
+            "q2-p3": {
+                title: "📄 Question 2 - Page 3: Binary Search Main Program & Testing 2(f)",
+                imageFile: "N25_q2_pg3.PNG",
+                code: `# =========================================================
+# 9618 November 2025 Paper 42 - Question 2(f) Main Program
+# =========================================================
+
+if __name__ == "__main__":
+    try:
+        search_val = int(input("Enter integer to search: "))
+        pos = RecursiveBinarySearch(ArrayData, 0, len(ArrayData) - 1, search_val)
+        if pos == -1:
+            print("Not found")
+        else:
+            print(f"Found at position {pos}")
+    except ValueError:
+        print("Invalid input.")`
+            },
+
+            // --- QUESTION 3 ---
+            "q3-p1": {
+                title: "📄 Question 3 - Page 1: Tree Setup & AddNode() 3(a)-(b)",
+                imageFile: "N25_q3_pg1.PNG",
+                code: `# =========================================================
+# 9618 November 2025 Paper 42 - Question 3(a) & (b)
+# =========================================================
+
+class TreeNode:
+    def __init__(self):
+        self.LeftPointer = -1
+        self.Data = -1
+        self.RightPointer = -1
+
+# 3(a) Global TreeArray, RootPointer, FreeNode
+TreeArray = [TreeNode() for _ in range(50)]
+RootPointer = -1
+FreeNode = 0
+
+# 3(b) Procedure AddNode()
+def AddNode(NewData: int):
+    global TreeArray, RootPointer, FreeNode
+    
+    if FreeNode > 49:
+        print("The tree is full")
+        return
+
+    TreeArray[FreeNode].Data = NewData
+    TreeArray[FreeNode].LeftPointer = -1
+    TreeArray[FreeNode].RightPointer = -1
+
+    if RootPointer == -1:
+        RootPointer = FreeNode
+    else:
+        CurrentNode = RootPointer
+        Placed = False
+        while not Placed:
+            if NewData < TreeArray[CurrentNode].Data:
+                if TreeArray[CurrentNode].LeftPointer == -1:
+                    TreeArray[CurrentNode].LeftPointer = FreeNode
+                    Placed = True
+                else:
+                    CurrentNode = TreeArray[CurrentNode].LeftPointer
+            else:
+                if TreeArray[CurrentNode].RightPointer == -1:
+                    TreeArray[CurrentNode].RightPointer = FreeNode
+                    Placed = True
+                else:
+                    CurrentNode = TreeArray[CurrentNode].RightPointer
+
+    FreeNode += 1`
+            },
+            "q3-p2": {
+                title: "📄 Question 3 - Page 2: File Reading & WriteAllToFile() 3(c)-(e)",
+                imageFile: "N25_q3_pg2.PNG",
+                code: `# =========================================================
+# 9618 November 2025 Paper 42 - Question 3(c) & (d)
+# =========================================================
+
+# 3(c) Read TreeData.txt
+def ReadTreeData():
+    try:
+        file = open("TreeData.txt", "r")
+        for line in file:
+            val = line.strip()
+            if val != "":
+                AddNode(int(val))
+        file.close()
+    except IOError:
+        print("Error: Could not open TreeData.txt")
+
+# 3(d) WriteAllToFile() Procedure
+def WriteAllToFile():
+    try:
+        file = open("Tree.txt", "w")
+        for node in TreeArray:
+            line = f"{node.LeftPointer},{node.Data},{node.RightPointer}\\n"
+            file.write(line)
+        file.close()
+        print("Tree written to Tree.txt successfully.")
+    except IOError:
+        print("Error: Could not write to Tree.txt")
+
+# 3(e) Main program execution
+if __name__ == "__main__":
+    ReadTreeData()
+    WriteAllToFile()`
+            },
+            "q3-p3": {
+                title: "📄 Question 3 - Page 3: TreeData.txt Data File Format",
+                imageFile: "N25_q3_pg3.PNG",
+                code: `# =========================================================
+# TreeData.txt Data File Content Reference
+# =========================================================
+10
+25
+5
+15
+30
+3
+8`
+            }
+        };
+
+        let currentImageFilename = "";
+
+        function loadSelectedPage(questionKey) {
+            let selectedValue = "";
+            
+            if (questionKey === 'q1') {
+                selectedValue = document.getElementById("q1Dropdown").value;
+                document.getElementById("q2Dropdown").selectedIndex = 0;
+                document.getElementById("q3Dropdown").selectedIndex = 0;
+            } else if (questionKey === 'q2') {
+                selectedValue = document.getElementById("q2Dropdown").value;
+                document.getElementById("q1Dropdown").selectedIndex = 0;
+                document.getElementById("q3Dropdown").selectedIndex = 0;
+            } else if (questionKey === 'q3') {
+                selectedValue = document.getElementById("q3Dropdown").value;
+                document.getElementById("q1Dropdown").selectedIndex = 0;
+                document.getElementById("q2Dropdown").selectedIndex = 0;
+            }
+
+            const data = examData[selectedValue];
+            if (!data) return;
+
+            currentImageFilename = data.imageFile;
+
+            document.getElementById("panelTitle").innerText = data.title;
+            document.getElementById("pythonCodeOutput").innerText = data.code;
+
+            const galleryBox = document.getElementById("imageGalleryOutput");
+            galleryBox.innerHTML = ""; 
+            
+            const img = document.createElement("img");
+            img.src = RAW_GITHUB_BASE + data.imageFile;
+            img.onerror = function() {
+                this.onerror = null;
+                this.src = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="500" height="400" viewBox="0 0 500 400"><rect width="100%" height="100%" fill="%23f8fafc"/><text x="50%" y="45%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="%23475569">Image Not Found on GitHub</text><text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="monospace" font-size="13" fill="%230284c7">${currentImageFilename}</text></svg>`;
+            };
+            galleryBox.appendChild(img);
+        }
+
+        window.onload = function() {
+            document.getElementById("q1Dropdown").value = "q1-p1";
+            loadSelectedPage('q1');
+        };
+    </script>
+</body>
+</html>
